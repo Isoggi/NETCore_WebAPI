@@ -45,3 +45,30 @@ function AddUserAccess(user) {
     });
     
 }
+
+function GetEmployeList() {
+    $.ajax({
+        type: "GET",
+        url: "https://localhost:/employee",
+        dataType: "json",
+        data: JSON.stringify(user),
+        success: function (result, status) {
+            var table = $("#employeelist");
+
+            table.append("<tr><td>" + result["NIK"]+"</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+            table.append("<td>" + result["Name"] + "</td>");
+
+            table.append("<td>" + result[] +"</td></tr>");
+
+            $("#message").html(table);
+        },
+        error: function (xhr, status, error) {
+            alert("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+        }
+    });
+}

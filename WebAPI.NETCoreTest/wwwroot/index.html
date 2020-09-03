@@ -31,16 +31,21 @@
         <div class="container">
             <div class="container" id="loginForm">
                 <label> Nama </label>
-                <input type="text" placeholder="Enter User ID" id="username">
+                <input type="text" placeholder="Enter User ID" id="filter_name">
                 <label>Tanggal Lahir</label>
-                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <input type="date" placeholder="Tanggal Lahir" id="filter_name">
                 <label>Agama</label>
-                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <select name="agama" id="filter_rel">
+                    <option value=""></option>
+                </select>
                 <label>Jenis Kelamin</label>
-                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <select name="jenisKelamin" id="filter_gender">
+                    <option value=""></option>
+                </select>
                 <label>Jabatan</label>
-                <input type="date" placeholder="Tanggal Lahir" id="password">
-
+                <select name="jabatan" id="filter_role">
+                    <option value=""></option>
+                </select>
             </div>
         </div>
         <div>
@@ -71,12 +76,13 @@
             </table>
         </div>
     </div>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/actions.js"></script>
     <script src="js/services.js"></script>
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/jquery/jquery.min.js"></script>
     <script type="text/javascript">
+
     </script>
-    <link rel="stylesheet" href="css/style.css">
 </body>
 </html>  
