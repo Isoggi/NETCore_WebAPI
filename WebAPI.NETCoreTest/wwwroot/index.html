@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Test </title>
+</head>
+<body>
+    <div class="container" id="PageLogin">
+        <center> <h1> Form Login </h1> </center>
+        <form>
+            <div class="container" id="loginForm">
+                <label>User ID : </label>
+                <input type="text" placeholder="Enter User ID" id="username" required>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter Password" id="password" required>
+            </div>
+            <div class="container">
+                <button type="submit" class="btn" onclick="GetUserAccess()" id="loginUser"> Login </button>
+                <button type="submit" class="btn" onclick="AddUserAccess()" id="addUser"> Add User </button>
+                <button type="button" class="cancelbtn"> Cancel </button>
+            </div>
+        </form>
+    </div>
+
+    <!--========-->
+
+    <div class="container" id="PageList">
+        <center>
+            <h1> Form List Data karyawan </h1>
+        </center>
+        <div class="container">
+            <div class="container" id="loginForm">
+                <label> Nama </label>
+                <input type="text" placeholder="Enter User ID" id="username">
+                <label>Tanggal Lahir</label>
+                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <label>Agama</label>
+                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <label>Jenis Kelamin</label>
+                <input type="date" placeholder="Tanggal Lahir" id="password">
+                <label>Jabatan</label>
+                <input type="date" placeholder="Tanggal Lahir" id="password">
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="container">
+            <table style="width:100%">
+                <tr>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Department</th>
+                    <th>Jabatan</th>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/actions.js"></script>
+    <script src="js/services.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</body>
+</html>  
