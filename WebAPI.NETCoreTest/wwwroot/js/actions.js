@@ -24,3 +24,21 @@ function CancelAddUserAccess() {
     $('#name').parent('div').remove();
     $('#loginUser').show();
 }
+
+function AddItemToList(data) {
+    var table = $('#employeeList');
+    if (data) {
+
+    }
+
+    table.append("<tr><td>" + result["NIK"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+    table.append("<td>" + result["Name"] + "</td>");
+
+    table.append("<td>" + result[] + "</td></tr>");
+
+}

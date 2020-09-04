@@ -30,29 +30,33 @@
         </center>
         <div class="container">
             <div class="container" id="loginForm">
-                <label> Nama </label>
-                <input type="text" placeholder="Enter User ID" id="filter_name">
-                <label>Tanggal Lahir</label>
-                <input type="date" placeholder="Tanggal Lahir" id="filter_name">
-                <label>Agama</label>
-                <select name="agama" id="filter_rel">
-                    <option value=""></option>
-                </select>
-                <label>Jenis Kelamin</label>
-                <select name="jenisKelamin" id="filter_gender">
-                    <option value=""></option>
-                </select>
-                <label>Jabatan</label>
-                <select name="jabatan" id="filter_role">
-                    <option value=""></option>
-                </select>
+                <div class="half">
+                    <label> Nama </label>
+                    <input type="text" placeholder="Enter User ID" id="filter_name">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" placeholder="Tanggal Lahir" id="filter_name">
+                </div>
+                <div class="half">
+                    <label>Agama</label>
+                    <select name="agama" id="filter_rel">
+                        <option value=""></option>
+                    </select>
+                    <label>Jenis Kelamin</label>
+                    <select name="jenisKelamin" id="filter_gender">
+                        <option value=""></option>
+                    </select>
+                    <label>Jabatan</label>
+                    <select name="jabatan" id="filter_role">
+                        <option value=""></option>
+                    </select>
+                </div>
             </div>
         </div>
         <div>
 
         </div>
-        <div class="container">
-            <table style="width:100%">
+        <div class="container half">
+            <table style="width:100%" id="employeelist">
                 <tr>
                     <th>NIK</th>
                     <th>Nama</th>
@@ -61,9 +65,9 @@
                     <th>Jenis Kelamin</th>
                     <th>Department</th>
                     <th>Jabatan</th>
-
+                    <th>Action</th>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -72,11 +76,12 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
+                    <td></td>
+                </tr>-->
             </table>
         </div>
     </div>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <script src="js/actions.js"></script>
     <script src="js/services.js"></script>
     <script src="lib/jquery/jquery.js"></script>

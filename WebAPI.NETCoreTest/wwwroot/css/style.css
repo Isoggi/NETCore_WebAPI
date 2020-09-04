@@ -18,7 +18,16 @@ form {
 }
 
 input[type=text], input[type=password] {
-    width: 50%;
+    width: 30%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+
+label {
+    width: 20%;
     margin: 8px 0;
     padding: 12px 20px;
     display: inline-block;
@@ -27,7 +36,7 @@ input[type=text], input[type=password] {
 }
 
 select {
-    width: 50%;
+    width: 30%;
     margin: 8px 0;
     padding: 12px 20px;
     display: inline-block;
@@ -55,4 +64,23 @@ button:hover {
 .container {
     padding: 25px;
     background-color: lightblue;
+}
+
+table {
+    font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #999;
+    padding: 8px 20px;
+}
+
+.half {
+    width: 50% !important;
+}
+
+.third {
+    width: 33% !important;
 }
